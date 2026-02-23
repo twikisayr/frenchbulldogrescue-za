@@ -1,0 +1,3 @@
+scripts/.nano.env
+assets-inbox/nano-banana/*
+!assets-inbox/nano-banana/.gitkeep
