@@ -35,9 +35,13 @@
     </section>
 
     <h2>Start your surrender request</h2>
-    <div class="notice">Temporary form: wire this to Turnstile + email/webhook before going live with paid traffic.</div>
+    <div class="notice">Confidential enquiry form. If your case is urgent, please select “Yes - urgent today” and include immediate safety concerns in your notes.</div>
 
-    <form action="#" method="post">
+    <form id="surrender-form" action="https://formsubmit.co/littledoggyrescue@gmail.com" method="post">
+      <input type="hidden" name="_subject" value="New Frenchie Surrender Lead" />
+      <input type="hidden" name="_next" value="https://frenchbulldogrescue.co.za/thanks/" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
       <label>Full name<input required name="full_name" /></label>
       <label>Mobile number<input required name="mobile" /></label>
       <label>Email address<input type="email" name="email" /></label>
@@ -67,5 +71,6 @@
 
     <footer>© 2026 French Bulldog Rescue SA</footer>
   </main>
+  <script src="/tracking.js"></script>
 </body>
 </html>
