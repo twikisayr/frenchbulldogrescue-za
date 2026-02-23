@@ -1,30 +1,28 @@
-<svg width="920" height="220" viewBox="0 0 920 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="980" height="240" viewBox="0 0 980 240" xmlns="http://www.w3.org/2000/svg" fill="none">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="220" y2="220" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0F172A"/>
-      <stop offset="1" stop-color="#1E293B"/>
+    <linearGradient id="markBg" x1="0" y1="0" x2="240" y2="240" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1324"/>
+      <stop offset="1" stop-color="#16233E"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#EF4444"/>
+    <linearGradient id="markAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#D97706"/>
       <stop offset="1" stop-color="#B91C1C"/>
     </linearGradient>
   </defs>
 
-  <rect x="10" y="10" width="200" height="200" rx="42" fill="url(#bg)"/>
+  <!-- Mark: shield + monogram for a professional rescue identity -->
+  <g transform="translate(18,18)">
+    <path d="M102 0C140 18 169 18 204 0V76C204 141 162 189 102 204C42 189 0 141 0 76V0C35 18 64 18 102 0Z" fill="url(#markBg)"/>
+    <path d="M102 20C132 33 154 33 178 21V76C178 127 146 165 102 178C58 165 26 127 26 76V21C50 33 72 33 102 20Z" fill="#0F1B33" stroke="#334155"/>
+    <path d="M58 94c0-26 20-45 44-45 11 0 21 5 28 13 7-8 17-13 28-13 24 0 44 19 44 45 0 32-30 53-72 77-42-24-72-45-72-77Z" fill="#F8FAFC"/>
+    <circle cx="84" cy="66" r="8" fill="url(#markAccent)"/>
+    <circle cx="120" cy="66" r="8" fill="url(#markAccent)"/>
+    <path d="M92 104c8 7 20 7 28 0" stroke="#0F172A" stroke-width="5" stroke-linecap="round"/>
+  </g>
 
-  <!-- stylised frenchie face mark -->
-  <ellipse cx="110" cy="124" rx="58" ry="46" fill="#F8FAFC"/>
-  <ellipse cx="82" cy="88" rx="18" ry="30" fill="#F8FAFC"/>
-  <ellipse cx="138" cy="88" rx="18" ry="30" fill="#F8FAFC"/>
-  <circle cx="86" cy="98" r="6" fill="url(#accent)"/>
-  <circle cx="134" cy="98" r="6" fill="url(#accent)"/>
-  <ellipse cx="110" cy="132" rx="10" ry="8" fill="#0F172A"/>
-  <path d="M95 148C103 156 117 156 125 148" stroke="#0F172A" stroke-width="5" stroke-linecap="round"/>
-  <circle cx="72" cy="124" r="4" fill="#CBD5E1"/>
-  <circle cx="148" cy="124" r="4" fill="#CBD5E1"/>
-
-  <!-- wordmark -->
-  <text x="240" y="92" fill="#0F172A" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="58" font-weight="800" letter-spacing="-1">French Bulldog</text>
-  <text x="240" y="152" fill="#1E293B" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="54" font-weight="700" letter-spacing="-0.6">Rescue South Africa</text>
-  <rect x="242" y="168" width="292" height="8" rx="4" fill="url(#accent)"/>
+  <!-- Wordmark -->
+  <text x="250" y="96" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="62" font-weight="800" fill="#0F172A" letter-spacing="-1.2">French Bulldog</text>
+  <text x="250" y="162" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="54" font-weight="650" fill="#1E293B" letter-spacing="-0.5">Rescue South Africa</text>
+  <text x="252" y="199" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="600" fill="#475569">Safe surrender • Ethical rehoming • Trusted rescue network</text>
+  <rect x="252" y="212" width="368" height="8" rx="4" fill="url(#markAccent)"/>
 </svg>

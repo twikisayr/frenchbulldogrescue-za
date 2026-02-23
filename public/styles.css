@@ -29,6 +29,20 @@ body {
   padding: 28px;
 }
 .hero-banner { width:100%; border-radius:14px; margin-bottom:16px; border:1px solid #1e293b; }
+.trust-strip {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin: 14px 0 4px;
+}
+.trust-pill {
+  background:#f8fafc;
+  border:1px solid #cbd5e1;
+  border-radius: 10px;
+  padding:10px 12px;
+  font-size:.95rem;
+  color:#1e293b;
+}
 h1 { font-size: clamp(2rem, 4vw, 2.6rem); line-height: 1.2; margin: 0 0 12px; }
 h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin: 26px 0 12px; }
 p.lead { font-size: 1.1rem; color: #111827; }
