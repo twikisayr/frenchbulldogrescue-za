@@ -1,12 +1,14 @@
 :root {
   --bg: #f8fafc;
-  --text: #0f172a;
-  --muted: #334155;
+  --text: #1e293b;
+  --muted: #475569;
   --card: #ffffff;
   --border: #cbd5e1;
-  --primary: #991b1b;
-  --secondary: #1d4ed8;
-  --accent: #075985;
+  --primary: #14b8a6;
+  --secondary: #1e293b;
+  --accent: #b45309;
+  --accent-hover: #92400e;
+  --heading: #0f172a;
 }
 * { box-sizing: border-box; }
 body {
@@ -14,8 +16,9 @@ body {
   font-family: Inter, Segoe UI, Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.65;
 }
+h1,h2,h3 { font-family: "Playfair Display", Georgia, serif; color: var(--heading); }
 .container { max-width: 1040px; margin: 0 auto; padding: 24px 16px; }
 .site-head { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:18px; }
 .site-head img { max-width: 320px; width: 100%; height: auto; }
@@ -29,6 +32,27 @@ body {
   padding: 28px;
 }
 .hero-banner { width:100%; border-radius:14px; margin-bottom:16px; border:1px solid #1e293b; }
+.hero-image-panel {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #1e293b;
+  margin-bottom: 16px;
+  min-height: 280px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero-image-overlay {
+  position:absolute; inset:0;
+  background: linear-gradient(to right, rgba(15,23,42,0.9) 0%, rgba(15,23,42,0.6) 50%, rgba(15,23,42,0.2) 100%);
+}
+.hero-image-text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding: 28px;
+  max-width: 640px;
+}
 .trust-strip {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -55,7 +79,8 @@ p.lead { font-size: 1.1rem; color: #111827; }
   color: #fff;
   font-weight: 700;
 }
-.btn.primary { background: var(--primary); }
+.btn.primary { background: var(--accent); }
+.btn.primary:hover { background: var(--accent-hover); }
 .btn.secondary { background: var(--secondary); }
 .btn.ghost { background: #334155; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
