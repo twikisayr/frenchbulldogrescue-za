@@ -52,7 +52,8 @@ h1,h2,h3 { font-family: "Playfair Display", Georgia, serif; color: var(--heading
 .nav-links { display:flex; align-items:center; gap:18px; flex-wrap:wrap; }
 .nav-links a { font-size:.83rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:#475569; text-decoration:none; }
 .nav-links a:hover { color:#14b8a6; }
-.nav-cta { background:#1e293b; color:#fff !important; padding:10px 14px; border-radius:8px; }
+.nav-cta { background:#1e293b; color:#fff !important; padding:10px 14px; border-radius:8px; border-bottom-color: transparent !important; }
+.nav-cta:hover { background:#0f172a; color:#fff !important; border-bottom-color: transparent !important; }
 
 .hero {
   background: #fff;
