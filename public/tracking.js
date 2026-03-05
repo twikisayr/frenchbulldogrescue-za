@@ -16,7 +16,13 @@
     if (el) el.value = value || '';
   }
 
-  setValue('submitted-at-iso', new Date().toISOString());
+  var nowIso = new Date().toISOString();
+  var leadId = ['fbr', nowIso.replace(/[-:.TZ]/g, '').slice(0, 14), Math.random().toString(36).slice(2, 8)].join('-');
+
+  setValue('submitted-at-iso', nowIso);
+  setValue('lead-id', leadId);
+  setValue('submission-page-url', window.location.href || '');
+  setValue('client-user-agent', navigator.userAgent || '');
   setValue('submission-referrer', document.referrer || 'direct');
   setValue('utm-source', getQueryParam('utm_source'));
   setValue('utm-medium', getQueryParam('utm_medium'));
