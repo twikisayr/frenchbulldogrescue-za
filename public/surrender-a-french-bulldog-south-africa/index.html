@@ -121,9 +121,9 @@
       <input type="hidden" name="utm_medium" id="utm-medium" value="" />
       <input type="hidden" name="utm_campaign" id="utm-campaign" value="" />
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
-      <label>Full name<input required name="full_name" /></label>
-      <label>Mobile number<input required name="mobile" /></label>
-      <label>Email address<input type="email" name="email" /></label>
+      <label>Full name<input required name="full_name" autocomplete="name" /></label>
+      <label>Mobile number<input required name="mobile" type="tel" inputmode="tel" autocomplete="tel" /></label>
+      <label>Email address<input type="email" name="email" autocomplete="email" /></label>
       <label>Preferred contact method
         <select name="contact_method" required>
           <option value="">Select contact method</option>
