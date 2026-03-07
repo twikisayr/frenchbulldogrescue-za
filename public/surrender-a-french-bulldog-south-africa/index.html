@@ -124,11 +124,10 @@
       <label>Full name<input required name="full_name" autocomplete="name" /></label>
       <label>Mobile number<input required name="mobile" type="tel" inputmode="tel" autocomplete="tel" /></label>
       <label>Email address<input type="email" name="email" autocomplete="email" /></label>
-      <label>Preferred contact method
+      <label>Preferred contact method <span class="small" style="font-weight:500;">(defaults to WhatsApp for fastest coordination)</span>
         <select name="contact_method" required>
-          <option value="">Select contact method</option>
-          <option>Phone call</option>
           <option>WhatsApp</option>
+          <option>Phone call</option>
           <option>SMS</option>
           <option>Email</option>
         </select>
@@ -163,7 +162,7 @@
           <li>You can submit now even if you don’t have every detail yet</li>
         </ul>
       </div>
-      <button class="btn primary" type="submit">Send confidential surrender request</button>
+      <button class="btn primary" type="submit">Send confidential surrender request (no public posting)</button>
       <p class="small" style="margin-top:10px;"><strong>Typical response:</strong> same day for urgent requests, otherwise within 24 hours.</p>
       <p class="small" style="margin-top:6px;color:#334155;"><strong>Tip:</strong> The form auto-includes your referral and page details so we can route your request faster to the right coordinator.</p>
     </form>
