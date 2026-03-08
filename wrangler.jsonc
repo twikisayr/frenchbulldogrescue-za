@@ -1,7 +1,9 @@
 {
   "name": "frenchbulldogrescue-za",
+  "main": "src/index.js",
   "compatibility_date": "2026-02-23",
   "assets": {
-    "directory": "./public"
+    "directory": "./public",
+    "binding": "ASSETS"
   }
 }
