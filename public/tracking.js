@@ -28,6 +28,24 @@
   setValue('utm-medium', getQueryParam('utm_medium'));
   setValue('utm-campaign', getQueryParam('utm_campaign'));
 
+  function shouldFastTrackUrgent() {
+    var urgentValue = (getQueryParam('urgent') || '').toLowerCase();
+    return urgentValue === '1' || urgentValue === 'yes' || urgentValue === 'true' || urgentValue === 'today';
+  }
+
+  if (shouldFastTrackUrgent()) {
+    var urgentSelect = form.querySelector('select[name="urgent"]');
+    if (urgentSelect) {
+      urgentSelect.value = 'Yes - urgent today';
+    }
+
+    var urgentNote = document.getElementById('urgent-priority-note');
+    if (urgentNote) {
+      urgentNote.style.display = 'block';
+      urgentNote.innerHTML = '<strong>Urgent case fast-track enabled:</strong> we have preselected <em>Yes - urgent today</em>. Please include immediate safety/medical risks so the team can prioritise same-day follow-up.';
+    }
+  }
+
   form.addEventListener('submit', function () {
     setValue('submitted-at-iso', new Date().toISOString());
     try {
