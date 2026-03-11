@@ -99,6 +99,7 @@
     <div class="notice">Confidential enquiry form. If your case is urgent, please select “Yes - urgent today” and include immediate safety concerns in your notes.</div>
     <div class="notice" style="background:#ecfeff;border-color:#99f6e4;color:#134e4a;">
       <strong>Before you start (about 2 minutes):</strong>
+      <p style="margin-top:8px;"><strong>Fast path:</strong> if needed, submit with just your name, mobile, province, urgency, and a short situation summary — you can add extra detail later.</p>
       <ul style="margin:8px 0 0 18px;">
         <li>Your best contact number and province</li>
         <li>A short summary of your Frenchie’s current situation</li>
@@ -125,7 +126,7 @@
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
       <label>Full name<input required name="full_name" autocomplete="name" /></label>
       <label>Mobile number<input required name="mobile" type="tel" inputmode="tel" autocomplete="tel" /></label>
-      <label>Email address<input type="email" name="email" autocomplete="email" /></label>
+      <label>Email address <span class="small" style="font-weight:500;">(optional — leave blank if WhatsApp or phone is best)</span><input type="email" name="email" autocomplete="email" /></label>
       <label>Preferred contact method <span class="small" style="font-weight:500;">(defaults to WhatsApp for fastest coordination)</span>
         <select name="contact_method" required>
           <option>WhatsApp</option>
