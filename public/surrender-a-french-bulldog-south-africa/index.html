@@ -92,6 +92,14 @@
               "@type": "Answer",
               "text": "Yes. You can submit with core details first and add more information later so we can start triage quickly."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "What information helps the rescue team assess my Frenchie faster?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The most useful details are your Frenchie's age, sex, sterilisation status, any breathing, skin or mobility issues, how urgent the handover is, and whether your dog is comfortable with children, dogs or cats."
+            }
           }
         ]
       }
@@ -221,8 +229,17 @@
         </select>
       </label>
       <label>Tell us about your Frenchie and current situation
-        <textarea name="context" rows="6" required></textarea>
+        <textarea name="context" rows="6" required placeholder="Example: 4-year-old male, not sterilised, in Gauteng. Friendly with people, not good with cats. Needs help this week because we are relocating. Has occasional breathing issues in hot weather."></textarea>
       </label>
+      <section class="notice" aria-label="What details help us assess your Frenchie faster" style="background:#eff6ff;border-color:#93c5fd;color:#1e3a8a;margin-top:10px;">
+        <strong>Helpful details for faster triage:</strong>
+        <ul style="margin:8px 0 0 18px;">
+          <li>Approximate age, sex, sterilisation status, and province</li>
+          <li>Any breathing, skin, spine, allergy, or other medical issues</li>
+          <li>Whether your Frenchie is okay with children, dogs, or cats</li>
+          <li>Why you need help now and whether the handover is urgent today, this week, or planned</li>
+        </ul>
+      </section>
       <div class="notice" style="background:#f8fafc;border-color:#cbd5e1;color:#0f172a;margin-top:10px;">
         <strong>Before you submit:</strong> Your request is confidential, never posted publicly, and reviewed by a rescue team member.
       </div>
@@ -246,6 +263,7 @@
       <p><strong>How quickly will someone contact me?</strong><br>Urgent requests are prioritised for same-day response where possible. Non-urgent requests are usually answered within 24 hours.</p>
       <p><strong>Will my personal details be shared publicly?</strong><br>No. Your details are handled confidentially and used only to coordinate safe next steps for your Frenchie.</p>
       <p><strong>Can I submit if I do not have every detail yet?</strong><br>Yes. Submit core details first so we can triage quickly, then add extra information later.</p>
+      <p><strong>What details help the rescue team assess my Frenchie faster?</strong><br>Age, sex, sterilisation status, medical issues, behaviour around children/dogs/cats, your province, and how urgent the handover is are the most useful starting details.</p>
       <p style="margin-bottom:0;">Need more detail before submitting? Read our <a href="/french-bulldog-surrender-guide-south-africa/">French Bulldog surrender guide for South Africa</a>.</p>
     </section>
 
