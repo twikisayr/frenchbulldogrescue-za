@@ -143,6 +143,48 @@ input, textarea, select {
   border-radius: 10px;
   font: inherit;
 }
+.choice-group {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.choice-group legend {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.choice-grid {
+  display: grid;
+  gap: 10px;
+}
+.choice-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: #fff;
+  cursor: pointer;
+}
+.choice-card input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  margin: 2px 0 0;
+  flex: 0 0 auto;
+}
+.choice-card span {
+  display: grid;
+  gap: 4px;
+}
+.choice-card small {
+  color: #475569;
+  line-height: 1.4;
+}
+.choice-card:has(input:checked) {
+  border-color: #b45309;
+  background: #fff7ed;
+  box-shadow: 0 0 0 2px rgba(180, 83, 9, 0.12);
+}
 footer { margin: 26px 0 10px; color: var(--muted); font-size: .9rem; }
 
 .mobile-sticky-cta {

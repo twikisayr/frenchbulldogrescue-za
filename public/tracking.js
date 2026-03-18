@@ -34,9 +34,9 @@
   }
 
   if (shouldFastTrackUrgent()) {
-    var urgentSelect = form.querySelector('select[name="urgent"]');
-    if (urgentSelect) {
-      urgentSelect.value = 'Yes - urgent today';
+    var urgentChoice = form.querySelector('input[name="urgent"][value="Yes - urgent today"]');
+    if (urgentChoice) {
+      urgentChoice.checked = true;
     }
 
     var urgentNote = document.getElementById('urgent-priority-note');

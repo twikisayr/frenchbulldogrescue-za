@@ -220,14 +220,15 @@
           <option>Mpumalanga</option><option>North West</option><option>Northern Cape</option>
         </select>
       </label>
-      <label>Is this urgent?
-        <select name="urgent" required>
-          <option value="">Select</option>
-          <option>Yes - urgent today</option>
-          <option>Needs help this week</option>
-          <option>Planning ahead</option>
-        </select>
-      </label>
+      <fieldset class="choice-group">
+        <legend>How urgent is this?</legend>
+        <p class="small" style="margin:0 0 8px;color:#475569;">Choose the option that best matches your situation so we can triage faster.</p>
+        <div class="choice-grid" role="radiogroup" aria-label="How urgent is this?">
+          <label class="choice-card"><input type="radio" name="urgent" value="Yes - urgent today" required /><span><strong>Urgent today</strong><small>Immediate safety, housing, or medical concern</small></span></label>
+          <label class="choice-card"><input type="radio" name="urgent" value="Needs help this week" required /><span><strong>This week</strong><small>You need help soon, but it is not an emergency today</small></span></label>
+          <label class="choice-card"><input type="radio" name="urgent" value="Planning ahead" required /><span><strong>Planning ahead</strong><small>You are preparing early and want guidance on next steps</small></span></label>
+        </div>
+      </fieldset>
       <label>Tell us about your Frenchie and current situation
         <textarea name="context" rows="6" required placeholder="Example: 4-year-old male, not sterilised, in Gauteng. Friendly with people, not good with cats. Needs help this week because we are relocating. Has occasional breathing issues in hot weather."></textarea>
       </label>
@@ -250,6 +251,9 @@
           <li>No judgement for asking for help</li>
           <li>You can submit now even if you don’t have every detail yet</li>
         </ul>
+      </div>
+      <div class="notice" style="background:#fff7ed;border-color:#fdba74;color:#7c2d12;margin-top:10px;">
+        <strong>Minimum needed to start:</strong> full name, mobile number, province, urgency, and a short situation summary. You can add extra detail later after triage.
       </div>
       <button class="btn primary" type="submit">Send confidential surrender request (no public posting)</button>
       <p class="small" style="margin-top:10px;"><strong>Typical response:</strong> same day for urgent requests, otherwise within 24 hours.</p>
