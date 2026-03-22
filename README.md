@@ -27,4 +27,8 @@ Get the first qualified French Bulldog surrender enquiry quickly, safely, and wi
 - Add analytics + conversion tracking
 - Add province-specific surrender landing pages
 
+## Protocol/indexing note
+- This site must force `http://` to `https://` with a 301 at the Cloudflare edge (for example via **Always Use HTTPS**).
+- Canonical tags already point to HTTPS, but that alone is not enough for Search Console validation if HTTP URLs still return `200`.
+
 <!-- redeploy 2026-02-23T13:15:11Z -->
