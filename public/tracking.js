@@ -28,10 +28,28 @@
   setValue('utm-medium', getQueryParam('utm_medium'));
   setValue('utm-campaign', getQueryParam('utm_campaign'));
 
+  function appendAttributionToThankYou() {
+    var nextInput = form.querySelector('input[name="_next"]');
+    if (!nextInput || !nextInput.value) return;
+
+    try {
+      var url = new URL(nextInput.value, window.location.origin);
+      url.searchParams.set('lead_id', leadId);
+      ['utm_source', 'utm_medium', 'utm_campaign'].forEach(function (name) {
+        var value = getQueryParam(name);
+        if (value) url.searchParams.set(name, value);
+      });
+      if (shouldFastTrackUrgent()) url.searchParams.set('urgent', '1');
+      nextInput.value = url.toString();
+    } catch (e) {}
+  }
+
   function shouldFastTrackUrgent() {
     var urgentValue = (getQueryParam('urgent') || '').toLowerCase();
     return urgentValue === '1' || urgentValue === 'yes' || urgentValue === 'true' || urgentValue === 'today';
   }
+
+  appendAttributionToThankYou();
 
   if (shouldFastTrackUrgent()) {
     var urgentChoice = form.querySelector('input[name="urgent"][value="Yes - urgent today"]');

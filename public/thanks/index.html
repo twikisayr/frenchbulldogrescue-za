@@ -17,6 +17,45 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="manifest" href="/site.webmanifest" />
   <link rel="stylesheet" href="/styles.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1G9HFTM92"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y1G9HFTM92');
+  </script>
+  <script>
+    (function () {
+      function getParam(name) {
+        try {
+          return new URLSearchParams(window.location.search || '').get(name) || '';
+        } catch (e) {
+          return '';
+        }
+      }
+
+      var leadId = getParam('lead_id');
+      var urgent = getParam('urgent') === '1';
+
+      try {
+        if (window.gtag) {
+          window.gtag('event', 'surrender_form_thank_you', {
+            event_category: 'lead',
+            event_label: urgent ? 'frenchie_surrender_urgent' : 'frenchie_surrender',
+            lead_id: leadId || undefined
+          });
+        }
+        if (window.plausible) {
+          window.plausible('Surrender Form Thank You', {
+            props: {
+              urgent: urgent ? 'yes' : 'no',
+              lead_id: leadId || 'unknown'
+            }
+          });
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <main class="container">
