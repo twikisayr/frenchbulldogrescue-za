@@ -64,8 +64,7 @@
     }
   }
 
-  form.addEventListener('submit', function () {
-    setValue('submitted-at-iso', new Date().toISOString());
+  function trackSubmitEvent() {
     try {
       if (window.gtag) {
         window.gtag('event', 'surrender_form_submit', {
@@ -77,5 +76,52 @@
         window.plausible('Surrender Form Submit');
       }
     } catch (e) {}
-  });
+  }
+
+  function redirectToThankYou() {
+    var nextInput = form.querySelector('input[name="_next"]');
+    window.location.href = nextInput && nextInput.value ? nextInput.value : '/thanks/?lead_id=' + encodeURIComponent(leadId);
+  }
+
+  function nativeSubmitFallback() {
+    form.removeEventListener('submit', handleSubmit);
+    if (form.requestSubmit) {
+      form.requestSubmit();
+    } else {
+      form.submit();
+    }
+  }
+
+  function handleSubmit(event) {
+    setValue('submitted-at-iso', new Date().toISOString());
+    appendAttributionToThankYou();
+    trackSubmitEvent();
+
+    if (!window.fetch || !window.FormData) return;
+
+    event.preventDefault();
+
+    var submitButton = form.querySelector('button[type="submit"]');
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = 'Sending confidential request...';
+    }
+
+    fetch('https://formsubmit.co/ajax/littledoggyrescue@gmail.com', {
+      method: 'POST',
+      headers: { Accept: 'application/json' },
+      body: new FormData(form)
+    }).then(function (response) {
+      if (!response.ok) throw new Error('FormSubmit returned ' + response.status);
+      redirectToThankYou();
+    }).catch(function () {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Send confidential surrender request (no public posting)';
+      }
+      nativeSubmitFallback();
+    });
+  }
+
+  form.addEventListener('submit', handleSubmit);
 })();
