@@ -2,59 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://frenchbulldogrescue.co.za/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://frenchbulldogrescue.co.za/surrender-a-french-bulldog-south-africa/</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://frenchbulldogrescue.co.za/adopt-a-french-bulldog-south-africa/</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://frenchbulldogrescue.co.za/how-french-bulldog-rescue-works-south-africa/</loc>
-  </url>
-  <url>
-    <loc>https://frenchbulldogrescue.co.za/french-bulldog-rescue-gauteng/</loc>
-  </url>
-  <url>
-    <loc>https://frenchbulldogrescue.co.za/french-bulldog-rescue-cape-town/</loc>
-  </url>
-  <url>
-    <loc>https://frenchbulldogrescue.co.za/french-bulldog-rescue-kwazulu-natal/</loc>
-  </url>
-  <url>
-    <loc>https://frenchbulldogrescue.co.za/about-french-bulldog-rescue-south-africa/</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://frenchbulldogrescue.co.za/emergency-french-bulldog-help-south-africa/</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://frenchbulldogrescue.co.za/french-bulldog-rescue-gauteng/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://frenchbulldogrescue.co.za/french-bulldog-rescue-cape-town/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://frenchbulldogrescue.co.za/french-bulldog-rescue-kwazulu-natal/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://frenchbulldogrescue.co.za/about-french-bulldog-rescue-south-africa/</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://frenchbulldogrescue.co.za/french-bulldog-surrender-faq-south-africa/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://frenchbulldogrescue.co.za/french-bulldog-adoption-faq-south-africa/</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://frenchbulldogrescue.co.za/french-bulldog-surrender-guide-south-africa/</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://frenchbulldogrescue.co.za/rehome-a-french-bulldog-south-africa/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://frenchbulldogrescue.co.za/french-bulldog-surrender-checklist-south-africa/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://frenchbulldogrescue.co.za/french-bulldog-health-and-care-south-africa/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://frenchbulldogrescue.co.za/french-bulldog-breathing-emergency-heat-guide-south-africa/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://frenchbulldogrescue.co.za/french-bulldog-skin-and-ear-care-guide-south-africa/</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://frenchbulldogrescue.co.za/french-bulldog-adoption-readiness-guide-south-africa/</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://frenchbulldogrescue.co.za/french-bulldog-behaviour-problems-surrender-south-africa/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>
